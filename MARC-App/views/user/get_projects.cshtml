@@ -1,0 +1,12 @@
+﻿@model MARC_App.Entities.Project
+@{
+    ViewData["Title"] = "Getproject";
+}
+@foreach(var item in (List<MARC_App.Entities.Project>)ViewBag.y)
+{
+
+<li>
+    @item.Id
+    @item.ProjectName
+</li>
+}
